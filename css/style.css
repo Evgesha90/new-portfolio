@@ -255,18 +255,50 @@ footer{
     .navigation{
         display: none;
     }
+    .myFoto{
+        width: 380px;
+        height: auto;
+        margin-top: 66px;
+    }
     .btnEmail{
         width: 200px;
     }
     .works{
-        width: 350px;
+        width: 340px;
         height: auto;
     }
     .projectsImg img{
-        width: 350px;
+        width: 300px;
         height: auto;
     }
     .header{
         width: 350px;
+    }
+    .vvisualRow{
+        width: 390px;
+        margin: 0 auto;
+    }
+    .visualTitle{
+        margin-bottom: 66px;
+    }
+    .vvisualRow img{
+        width: 340px;
+        margin: 5px;
+        height: auto;
+    }
+    footer{
+        display: block;
+    }
+    .socials{
+        text-align: center;
+    }
+    .socials img{
+        width: 20px;
+        height: auto;
+        margin-left: 0px;
+    }
+    
+    .madeBY{
+        text-align: center;
     }
 }
