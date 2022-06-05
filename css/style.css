@@ -247,3 +247,26 @@ footer{
         max-width: 700px;
     }
 }
+@media (max-width: 576px){
+    .logo{
+        width: 200px;
+        height: auto;
+    }
+    .navigation{
+        display: none;
+    }
+    .btnEmail{
+        width: 200px;
+    }
+    .works{
+        width: 350px;
+        height: auto;
+    }
+    .projectsImg img{
+        width: 350px;
+        height: auto;
+    }
+    .header{
+        width: 350px;
+    }
+}
