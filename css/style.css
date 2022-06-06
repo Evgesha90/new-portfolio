@@ -6,6 +6,7 @@ body{
     background-color: #202020;
     color: #DEDEDE;
     font-family: 'Manrope', sans-serif;
+    
 }
 header{
     background-color: #2D2D2D;
@@ -15,6 +16,7 @@ header{
     top:0;
     width: 100%;
     z-index: 100;
+    overflow: hidden;
 
     
 }
@@ -260,7 +262,7 @@ footer{
         display: none;
     }
     .myFoto{
-        width: 380px;
+        width: 250px;
         height: auto;
         margin-top: 66px;
     }
@@ -268,7 +270,7 @@ footer{
         width: 200px;
     }
     .works{
-        width: 340px;
+        width: 300px;
         height: auto;
     }
     .projectsImg img{
@@ -279,14 +281,14 @@ footer{
         width: 350px;
     }
     .vvisualRow{
-        width: 390px;
+        max-width: 390px;
         margin: 0 auto;
     }
     .visualTitle{
         margin-bottom: 66px;
     }
     .vvisualRow img{
-        width: 340px;
+        max-width: 300px;
         margin: 5px;
         height: auto;
     }
@@ -297,6 +299,7 @@ footer{
         text-align: center;
     }
     .socials img{
+        margin-top: 30px;
         width: 20px;
         height: auto;
         margin-left: 0px;
