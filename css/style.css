@@ -40,6 +40,45 @@ header{
     margin-top: 30px;
     margin-right: 6.8125rem;
 }
+.navigationMob{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    right: 0;
+}
+
+#check{
+    opacity: 0;
+}
+.btnMenu{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    top: 20px;
+    z-index: 11;
+}
+.btnMenu>span, 
+.btnMenu>span::before, 
+.btnMenu>span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #202020;
+    transition: 0.25s;
+}
+.btnMenu>span::before{
+    content: '';
+    top: -10px
+}
+.btnMenu>span::after{
+    content: '';
+    top: 10px
+}
 .navigation a{
     text-decoration: none;
     color: #DEDEDE;
@@ -47,6 +86,42 @@ header{
     font-weight: bold;
     font-size: 1.125rem;
     margin-left: 60px;
+}
+.navigationMob a{
+    text-decoration: none;
+    color: #DEDEDE;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 50px;
+    position: relative;
+    background-color: #2D2D2D;
+    text-align: center;
+    
+}
+.menuBox{
+    visibility: hidden;
+    position: relative;
+    background-color: #2D2D2D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#check:checked~.btnMenu>span{
+    transform: rotate(45deg);
+
+}
+#check:checked~.btnMenu>span::before{
+    top: 0;
+    transform: rotate(0);
+}
+#check:checked~.btnMenu>span::after{
+    top: 0;
+    transform: rotate(95deg);
+}
+#check:checked~.menuBox{
+    visibility: visible;
+    right: 0;
 }
 .navigation a:hover{
     color: #969696;
@@ -307,5 +382,8 @@ footer{
     
     .madeBY{
         text-align: center;
+    }
+    .navigationMob{
+        display: flex;
     }
 }
