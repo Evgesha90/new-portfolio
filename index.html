@@ -25,10 +25,10 @@
                     <span></span>
                 </label>
                 <div class="menuBox">
-                <a href="#">Home</a>
-                <a href="#">Work</a>
-                <a href="#">Contacts</a>
-            </div>
+                    <a href="#">Home</a>
+                    <a href="#">Work</a>
+                    <a href="#">Contacts</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -40,7 +40,7 @@
             <div class="greatingText">I help businesses and companies reach
                 their goals by designing user-centric digital
                 products & interactive experiences.</div>
-            <button class="btnEmail">
+            <button id="btnEmail" class="btnEmail">
                 <img src="img/mail.png" alt="Mail">
                 Написать мне
             </button>
@@ -53,11 +53,11 @@
             <div>Featured Work </div>
         </div>
         <div class="workRow">
-            <div class="workCol1"  >
+            <div class="workCol1">
                 <img class="works" src="img/work1.png" alt="Работа1" max-width="612px" height="888px">
                 <img class="works" src="img/work2.png" alt="Работа2" max-width="612px" height="888px">
             </div>
-            <div class="workCol2"  >
+            <div class="workCol2">
                 <img class="works" src="img/work3.png" alt="Работа3" max-width="612px" height="888px">
                 <img class="works" src="img/work4.png" alt="Работf4" max-width="612px" height="888px">
             </div>
@@ -67,32 +67,63 @@
         <div class="visualTitle">Visual Explorations</div>
         <div class="visualImg">
             <div class="vvisualRow">
-                <img src="img/visual1.png" >
-                <img src="img/visual2.png" >
-                <img src="img/visual3.png" >
-                <img src="img/visual4.png" >
-                <img src="img/visual5.png" >
-                <img src="img/visual6.png" >
+                <img src="img/visual1.png">
+                <img src="img/visual2.png">
+                <img src="img/visual3.png">
+                <img src="img/visual4.png">
+                <img src="img/visual5.png">
+                <img src="img/visual6.png">
             </div>
         </div>
     </section>
     <section class="projects">
         <div class="projecsTitle">Personal Projects</div>
         <div class="projectsImg">
-            <img src="img/project1.png" alt="" >
-            <img src="img/project2.png" alt="" >
-            <img src="img/project3.png" alt="" >
+            <img src="img/project1.png" alt="">
+            <img src="img/project2.png" alt="">
+            <img src="img/project3.png" alt="">
         </div>
     </section>
     <section class="contacts">
         <div class="contactsTitle">Contact Me</div>
         <div class="contactsContent">If you are looking to hire a product designer,
             I’m currently available for freelance work</div>
-        <button class="btnEmail">
+        <button id="btnEmail" class="btnEmail">
             <img src="img/mail.png" alt="Mail">
             Написать мне
         </button>
     </section>
+    <div class="modal">
+        
+            <div class="modalTutle">Средства связи</div>
+            <div class="modalSocials">
+                <a href="https://t.me/Zhenyasherbinsri" target="_blank"><img src="img/telegram.png" alt="telegram"
+                        width="42px" height="42px"></a>
+                <a href="https://vk.com/id164471804" target="_blank"><img src="img/vk.png" alt="vk" width="42px"
+                        height="42px"></a>
+                <a href="https://www.instagram.com/evgenii.shcherbinskii" target="_blank"><img src="img/instagram.png"
+                        alt="instagram" width="42px" height="42px"></a>
+                <a href="viber://chat?number=%2B375445391487" target="_blank"><img src="img/Viber.png" alt="Viber"
+                        width="42px" height="42px"></a>
+            </div>
+            <form class="modalForm" >
+                <h1>К сожалению форма пока не работает:(</h1>
+                 Ваше имя: 
+                 <input class="formName" type="text" placeholder="Имя" required></input>
+                 Ваш email:
+                 <input class="formEmail" type="email" placeholder="Email" required></input>
+                Текст сообщения:
+                <textarea class="formText" placeholder="Введите ваше сообщение"></textarea>
+                <button class="reset" type="reset">Очистить</button>
+                <fieldset>
+                <legend>Прикрепить файл</legend>
+                <input class="file" type="file" value="Выберите файл">
+                </fieldset>
+                <button class="submit" formnovalidate type="submit">Отправить</button>
+            </form>
+            <div class="overlay"></div>
+        
+    </div>
     <hr size="1px" color="#696969">
     <footer>
         <div class="madeBY">Made by <span>Евгений Щербинский</span> — Copyright 2021</div>
@@ -109,6 +140,7 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
