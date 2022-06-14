@@ -61,6 +61,7 @@ header{
     top: 20px;
     z-index: 11;
 }
+
 .btnMenu>span, 
 .btnMenu>span::before, 
 .btnMenu>span::after{
@@ -86,6 +87,7 @@ header{
     font-weight: bold;
     font-size: 1.125rem;
     margin-left: 60px;
+    cursor: pointer;
 }
 .navigationMob a{
     text-decoration: none;
@@ -130,16 +132,32 @@ header{
 
 .greating{
     display: flex;
-    margin:209px auto  0  auto;
+    margin:0 auto  0  auto;
     max-width: 1248px;
     justify-content: space-between;
+    padding-top:209px;
 
 }
 .greatingTitle{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: -0.5px;
     max-width: 730px;
+    transform: scale(0);
+    opacity: 0;
+    
+}
+.greatingTitle._active{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+    
+}
+.name{
+    color: #ffea05ab;
+}
+.wish{
+    color: #ff4545;
 }
 .greatingText{
     font-weight: 600;
@@ -177,11 +195,14 @@ header{
 .myFoto{
     max-width:400px;
     height:auto;
+    border-radius: 100%;
 }
 .work{
     max-width: 1280px;
     margin: 0 auto;
+    
 }
+
 .featuredWork{
     display: flex;
     align-items: center;
@@ -205,10 +226,18 @@ header{
 .works{
     margin: 12px;
     filter: brightness(60%);
-}
-.works:hover{
-    filter: none;
+    max-width:612px;
+    height:888px;
+    transform: rotateX( 90deg);
     transition: 0.3s;
+}
+.works._active:hover{
+    filter: none;
+    transition: 0.5s;
+}
+.works._active{
+    transform: rotateX( 0deg);
+    transition: 1s;
 }
 .workCol2{
     margin-top: 138px;
@@ -231,6 +260,12 @@ header{
 }
 .vvisualRow img{
     margin: 14px;
+    position: relative;
+    top: -100px;
+}
+.vvisualRow img._active{
+    opacity: 1;
+    transition: 5s;
 }
 .projects{
     max-width: 1280px;
