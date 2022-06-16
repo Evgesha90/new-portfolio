@@ -498,7 +498,7 @@ footer{
         flex-direction: column;
         position: fixed;
         top: 55px;
-        right: 0;
+        right: -250px;
         margin: 0;
         transition: .5s;
         z-index: 101;
