@@ -51,7 +51,7 @@ header{
     opacity: 0;
 }
 .btnMenu{
-    display: flex;
+    display:  none;
     align-items: center;
     cursor: pointer;
     position: fixed;
@@ -489,6 +489,24 @@ footer{
     }
 }
 @media (max-width: 833px){
+    .btnMenu{
+        display: flex;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: -250px;
+        right: 0;
+        margin: 0;
+        transition: .5s;
+    }
+    .navigation a{
+        padding: 25px;
+        background-color: #2D2D2D;
+        border-color: #2D2D2D;
+        border: 1px;
+    }
     .vvisualRow{
         text-align: center;
     }
@@ -508,9 +526,7 @@ footer{
         width: 200px;
         height: auto;
     }
-    .navigation{
-        display: none;
-    }
+    
     .myFoto{
         width: 250px;
         height: auto;
@@ -558,7 +574,5 @@ footer{
     .madeBY{
         text-align: center;
     }
-    .navigationMob{
-        display: flex;
-    }
+    
 }

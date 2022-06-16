@@ -75,4 +75,19 @@ setTimeout(() =>{
     animOnScroll();
 }, 300);
 
+// бурнер меню
+    const burgerMenu=document.querySelector('.navigation');
+    const burgerBtn=document.getElementById('check');
+
+burgerBtn.addEventListener('change', function (burgerOpen)  {
+    const burgerMenu=document.querySelector('.navigation');
+    const burgerBtn=document.getElementById('check');
+    
+    if (burgerBtn.checked) {
+    burgerMenu.style.top = '60px'}
+    else{
+        burgerMenu.style.top = '-250px'
+    }
+    
+} )
 
