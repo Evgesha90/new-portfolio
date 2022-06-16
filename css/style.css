@@ -496,10 +496,11 @@ footer{
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: -250px;
+        top: 55px;
         right: 0;
         margin: 0;
         transition: .5s;
+        z-index: 101;
     }
     .navigation a{
         padding: 25px;
