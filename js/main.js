@@ -84,7 +84,7 @@ burgerBtn.addEventListener('change', function (burgerOpen)  {
     const burgerBtn=document.getElementById('check');
     
     if (burgerBtn.checked) {
-    burgerMenu.style.top = '60px'}
+    burgerMenu.style.top = '55px'}
     else{
         burgerMenu.style.top = '-250px'
     }
