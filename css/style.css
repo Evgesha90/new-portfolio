@@ -493,6 +493,7 @@ footer{
         display: flex;
     }
     .navigation {
+        background-color: #2D2D2D;
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -504,7 +505,6 @@ footer{
     }
     .navigation a{
         padding: 25px;
-        background-color: #2D2D2D;
         border-color: #2D2D2D;
         border: 1px;
     }
