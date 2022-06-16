@@ -505,8 +505,7 @@ footer{
     }
     .navigation a{
         padding: 25px;
-        border-color: #2D2D2D;
-        border: 1px;
+        margin:0;
     }
     .vvisualRow{
         text-align: center;
