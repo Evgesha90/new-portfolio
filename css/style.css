@@ -299,23 +299,23 @@ header {
 }
 
 .vvisualRow._active img:nth-child(2) {
-    transition: all 0.8s ease 0.4s;
+    transition: all 0.8s ease 0.3s;
 }
 
 .vvisualRow._active img:nth-child(3) {
-    transition: all 0.8s ease 0.6s;
+    transition: all 0.8s ease 0.4s;
 }
 
 .vvisualRow._active img:nth-child(4) {
-    transition: all 0.8s ease 0.8s;
+    transition: all 0.8s ease 0.5s;
 }
 
 .vvisualRow._active img:nth-child(5) {
-    transition: all 0.8s ease 1s;
+    transition: all 0.8s ease 0.6s;
 }
 
 .vvisualRow._active img:nth-child(6) {
-    transition: all 0.8s ease 1.2s;
+    transition: all 0.8s ease 0.8s;
 }
 
 .vvisualRow img._active {
