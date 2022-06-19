@@ -515,11 +515,16 @@ footer{
         display: flex;
     }
     .navigation {
+        background-color: #2D2D2D;
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 55px;
+<<<<<<< HEAD
         right:-250px;
+=======
+        right: -250px;
+>>>>>>> 82c5047c06c63341592dd4dc638d80c2d14bf5c8
         margin: 0;
         transition: .5s;
         z-index: 101;
@@ -527,7 +532,11 @@ footer{
     }
     .navigation a{
         padding: 25px;
+<<<<<<< HEAD
         margin: 0;
+=======
+        margin:0;
+>>>>>>> 82c5047c06c63341592dd4dc638d80c2d14bf5c8
     }
     .vvisualRow{
         text-align: center;
