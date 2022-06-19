@@ -34,8 +34,8 @@ header {
 .logo {
     filter: invert(100%);
     width: 200px;
-    ;
     height: 60px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
@@ -57,7 +57,7 @@ header {
     width: 40px;
     height: 40px;
     right: 40px;
-    top: 20px;
+    top: 15px;
     z-index: 11;
 }
 
@@ -161,7 +161,7 @@ header {
     color: #959595;
     max-width: 520px;
     margin-top: 24px;
-    height: 108px;
+    min-height: 108px;
 }
 
 .btnEmail {
@@ -405,8 +405,9 @@ footer {
 
 .modal {
     display: none;
-    width: 750px;
-    height: 700px;
+    max-width: 750px;
+    max-height: 800px;
+    min-height: 700px;
     position: fixed;
     z-index: 20;
     top: 20%;
@@ -584,11 +585,24 @@ footer {
     .workCol2 .workCol1 {
         margin: 0 auto;
     }
+    .modal{
+        top: 0px;
+        left: 0px;
+        height: 100%;
+    }
 }
 
 @media (max-width: 833px) {
     .btnMenu {
         display: flex;
+        height: 20px;
+    }
+    header{
+        height: 50px;
+    }
+    .logo{
+        height: 25px;
+        width: auto;
     }
 
     .navigation {
@@ -597,11 +611,7 @@ footer {
         flex-direction: column;
         position: fixed;
         top: 55px;
-
         right: -250px;
-
-
-
         margin: 0;
         transition: .5s;
         z-index: 101;
@@ -632,11 +642,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .logo {
-        width: 200px;
-        height: auto;
-    }
-
     .myFoto {
         width: 250px;
         height: auto;
@@ -656,7 +661,9 @@ footer {
         width: 300px;
         height: auto;
     }
-
+    .greatingText {
+        height: 219px;
+    }
     .header {
         width: 350px;
     }
