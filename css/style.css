@@ -415,6 +415,9 @@ footer {
     background-color: #959595;
 
 }
+.modal h1{
+    font-size: medium;
+}
 
 .modalTutle {
     font-size: 20px;
@@ -588,7 +591,11 @@ footer {
     .modal{
         top: 0px;
         left: 0px;
+        min-width:300px ;
         height: 100%;
+    }
+    .formEmail{
+        width: auto;
     }
 }
 
@@ -599,6 +606,12 @@ footer {
     }
     header{
         height: 50px;
+    }
+    fieldset{
+        padding: 0;
+        margin: 0;
+        border: ;
+
     }
     .logo{
         height: 25px;
