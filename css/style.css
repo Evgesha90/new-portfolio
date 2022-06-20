@@ -602,6 +602,7 @@ footer {
     }
     .greatingTitle{
         font-size: 30px;
+        margin: 0 20px;
     }
     .greatingText{
         font-size: 20px;
