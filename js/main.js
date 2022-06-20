@@ -99,7 +99,7 @@ burgerBtn.addEventListener('change', function () {
 // эфект набора`
 
 const textanimation = () => {
-    const textTechnologi = 'Испозуемые технологии:<br> -Html <br> -CSS -SCSS -SASS -LESS-Bootstrap <br>-JavaScript -REACT -WEBPACK';
+    const textTechnologi = 'Испозуемые технологии:<br> -Html <br> -CSS -SCSS -SASS -LESS-Bootstrap <br>-JavaScript -REACT -WEBPACK ';
 
     const greatingText = document.querySelector('.greatingText');
     let text1 = '';

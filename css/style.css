@@ -224,6 +224,8 @@ header {
 .workRow {
     margin-top: 80px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
 }
 
@@ -239,8 +241,8 @@ header {
 .works {
     margin: 12px;
     filter: brightness(90%);
-    max-width: 612px;
-    height: 888px;
+    width: calc(100% - 24px);
+    height: auto;
     transform: rotateY(90deg);
     transform-origin: left;
     opacity: 0;
@@ -280,14 +282,17 @@ header {
 
 .vvisualRow {
     margin-top: 65px;
-    margin: 65px -12px 0px -12px;
+    margin: 65px 0px 0px 0px;
     perspective: 2000px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .vvisualRow img {
     margin: 14px;
     position: relative;
+    width: calc(33.333% - 28px);
     opacity: 0;
     top: -70px;
 
@@ -341,10 +346,13 @@ header {
 
 .projectsImg {
     margin-top: 66px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .projectsImg img {
     margin: 12px;
+    width: calc(33.333% - 24px);
 }
 
 .contacts {
@@ -568,24 +576,9 @@ footer {
 }
 
 @media (max-width: 1249px) {
-    .visual {
-        max-width: 853px;
-    }
+    
 
-    .projects {
-        max-width: 858px;
-        text-align: center
-    }
-
-    .workRow {
-        display: block;
-        text-align: center;
-    }
-
-    .workCol2 {
-        margin: 0 auto;
-    }
-
+   
     .workCol2 .workCol1 {
         margin: 0 auto;
     }
@@ -607,6 +600,12 @@ footer {
     .greating{
         padding-top: 100px;
     }
+    .greatingTitle{
+        font-size: 30px;
+    }
+    .greatingText{
+        font-size: 20px;
+    }
     .navigation {
         background-color: #2D2D2D;
         display: flex;
@@ -624,13 +623,23 @@ footer {
         padding: 25px;
         margin: 0;
     }
-
-    .vvisualRow {
+    .featuredWork {
+        margin-top: 75px;
+    }
+    .workCol2 {
+        margin-top: 75px;
+    }
+    .visualTitle {
+        margin-top: 75px;
+        margin-bottom: 33px;
+    }
+    
+    .visualImg{
         text-align: center;
     }
-
-    .projectsImg {
-        text-align: center;
+    .vvisualRow img{
+     margin: 7px;
+     width:calc(33.3333% - 14px) ;
     }
 
     .greating {
@@ -640,6 +649,12 @@ footer {
 
     .greatingText {
         max-width: 700px;
+    }
+    .projecsTitle{
+        margin-top: 120px;
+    }
+    .contactsTitle{
+        margin-top: 120px;
     }
     .modal{
         top: 0px;
@@ -662,38 +677,24 @@ footer {
 
     .btnEmail {
         width: 200px;
+        margin: 15px auto;
     }
 
-    .works {
-        width: 300px;
-        height: auto;
-    }
-
-    .projectsImg img {
-        width: 300px;
-        height: auto;
-    }
     .greatingText {
-        height: 219px;
+        height: 150px;
     }
     .header {
         width: 350px;
     }
-
-    .vvisualRow {
-        max-width: 390px;
-        margin: 0 auto;
+    .works{
+        width: calc(100% - 12px);
+        margin: 6px;
     }
 
     .visualTitle {
         margin-bottom: 66px;
     }
 
-    .vvisualRow img {
-        max-width: 300px;
-        margin: 5px;
-        height: auto;
-    }
 
     footer {
         display: block;
