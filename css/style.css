@@ -299,27 +299,27 @@ header {
 
 }
 
-.vvisualRow._active img:nth-child(1) {
+.vvisualRow ._active:nth-child(1) {
     transition: all 0.8s ease 0.2s;
 }
 
-.vvisualRow._active img:nth-child(2) {
+.vvisualRow ._active:nth-child(2) {
     transition: all 0.8s ease 0.3s;
 }
 
-.vvisualRow._active img:nth-child(3) {
+.vvisualRow ._active:nth-child(3) {
     transition: all 0.8s ease 0.4s;
 }
 
-.vvisualRow._active img:nth-child(4) {
+.vvisualRow ._active:nth-child(4) {
     transition: all 0.8s ease 0.5s;
 }
 
-.vvisualRow._active img:nth-child(5) {
+.vvisualRow ._active:nth-child(5) {
     transition: all 0.8s ease 0.6s;
 }
 
-.vvisualRow._active img:nth-child(6) {
+.vvisualRow ._active:nth-child(6) {
     transition: all 0.8s ease 0.8s;
 }
 
